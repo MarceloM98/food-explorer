@@ -5,17 +5,10 @@ import { useAuth } from "../hooks/auth";
 import { USER_ROLE } from "../utils/roles";
 
 import { AuthRoutes } from "./auth.routes";
+import { AppRoutes } from "./app.routes";
 
 export function Routes() {
-  const { user, signOut } = useAuth();
-
-  useEffect(() => {
-    api.get("users/validate").catch((error) => {
-      if (error.response?.status === 401) {
-        signOut();
-      }
-    });
-  }, []);
+  const { user } = useAuth();
 
   function AccessRoute() {
     switch (user.role) {
@@ -29,6 +22,6 @@ export function Routes() {
   }
 
   return (
-    <BrowserRouter>{user ? <AccessRoute /> : <AuthRoutes />}</BrowserRouter>
+    <BrowserRouter>{user ? <AppRoutes /> : <AuthRoutes />}</BrowserRouter>
   );
 }
