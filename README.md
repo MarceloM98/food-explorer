@@ -1,5 +1,7 @@
 # FOOD EXPLORER
 
+- O site pode ser acessado aqui https://foodexplorer-mmartins.netlify.app
+
 Aplicação de um menu interativo para um restaurante<br>
 O projeto será divido em duas partes: `Front-end` e `Back-end`
 
@@ -36,7 +38,6 @@ O projeto será divido em duas partes: `Front-end` e `Back-end`
 - [ ] O admin irá visualizar e controlar o status de cada pedido, por um campo do tipo select. Os pedidos irão aparecer em uma tabela ao clicar em Pedidos;
 - [ ] Já que o projeto está em dark mode, você pode aplicar a versão light mode;
 
-
 ### 📘 Ferramentas/Bibliotecas utilizadas
 
 - `reactJS`
@@ -44,7 +45,6 @@ O projeto será divido em duas partes: `Front-end` e `Back-end`
 - `express`
 - `vite`
 - `SQLlite`
-
 
 ## Perfil Admin para testes
 
